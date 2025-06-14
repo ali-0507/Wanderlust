@@ -1,0 +1,17 @@
+<!-- we don't want to show empty alert for that we are writing condition below -->
+<%if(success && success.length){%>
+<!-- Giving bootstrap styling -->
+<div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+     <%= success %>
+     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<%}%>
+
+
+<%if(error && error.length){%>
+<!-- Giving bootstrap styling -->
+<div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+     <%= error %>
+     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<%}%>
